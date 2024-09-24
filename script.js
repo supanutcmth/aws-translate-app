@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Run this when click Translate button
 function getDataFromAPI() {
-    // 
+    
     let API_GATEWAY_ENDPOINT = `PASTE TRANSLATE STAGE URL HERE`;
     
     // get variable from your value input
