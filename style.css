@@ -1,0 +1,165 @@
+body {
+    background: #8C52FF;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+textarea {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    top: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 2%;
+    width: 85vw;  /* 85% of the viewport width */
+    height: 20vh; /* 20% of the viewport height */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    padding: 10px;
+    display: block;    /* Allows margin auto to work */
+    font-size: 16px;   /* Adjust as needed */
+    line-height: 1.5;  /* Adjust as needed */
+}
+
+.styled-table {
+    width: 90vw;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #8C52FF;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: #f3f3f3;
+}
+
+
+
+#translate-container {
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin: 2%;
+}
+
+#history-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin: 2%;
+}
+
+#ans-div {
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2, label, p {
+    color: #fff;
+    margin: 8px 0;
+}
+
+button {
+    background: #debff4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #8b48d7;
+}
+
+
+select {
+    /* Basic styling */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 40px 12px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+
+    /* Custom dropdown arrow */
+    background-image: 
+        linear-gradient(45deg, transparent 50%, #666 50%),
+        linear-gradient(135deg, #666 50%, transparent 50%);
+    background-position: 
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px);
+    background-size: 
+        5px 5px,
+        5px 5px;
+    background-repeat: no-repeat;
+
+    /* Hover state */
+    &:hover {
+        border-color: #999;
+    }
+
+    /* Focus state */
+    &:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+    }
+}
+
+/* Style for option elements */
+select option {
+    padding: 12px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Remove default focus outline in Firefox */
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
